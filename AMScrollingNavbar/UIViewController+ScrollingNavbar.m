@@ -173,6 +173,19 @@
 	[self showNavBarAnimated:YES];
 }
 
+- (void)hideNavBarAnimated:(BOOL)animated
+{
+    NSTimeInterval interval = animated ? 0.2 : 0;
+    [UIView animateWithDuration:interval animations:^{
+        [self scrollWithDelta:self.navbarHeight - self.statusBar];
+    }];
+}
+
+- (void)hideNavbar
+{
+	[self hideNavBarAnimated:YES];
+}
+
 - (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer
 {
 	return YES;
