@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
   s.version      = "1.0"
   s.summary      = "AMScrollingNavbar"
   s.homepage     = "https://github.com/andreamazz/AMScrollingNavbar"
-  s.license      = { :type => 'MIT', :file => 'LICENSE.md' }
+  s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author       = { "Eddy Borja" => "eddyborja@gmail.com" }
   s.source       = { :git => "https://github.com/andreamazz/AMScrollingNavbar", :tag => "1.0" } 
   s.platform     = :ios, '5.0'
